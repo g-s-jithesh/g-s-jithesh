@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 245" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363d" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#30363d" />
+    </linearGradient>
+    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="barPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="barEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="barAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, monospace; }
+    .key { fill: #79c0ff; }
+    .str { fill: #a5d6ff; }
+    .num { fill: #d2a8ff; font-weight: 600; }
+    .comment { fill: #8b949e; font-style: italic; }
+    .punct { fill: #c9d1d9; }
+    .kw { fill: #ff7b72; }
+  </style>
+
+  <!-- Left Card: Developer Spec JSON / YAML -->
+  <rect x="2" y="2" width="540" height="241" rx="14" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="1.2" />
+  <text x="24" y="30" class="font-mono" font-size="12" fill="#8b949e" font-weight="600">📄 engineer_telemetry.json</text>
+  <line x1="2" y1="42" x2="542" y2="42" stroke="#21262d" stroke-width="1" />
+
+  <g transform="translate(24, 66)" class="font-mono" font-size="12.5">
+    <text x="0" y="0" class="punct">{</text>
+    <text x="18" y="22"><tspan class="key">"education"</tspan><tspan class="punct">: </tspan><tspan class="str">"B.Tech CSE (AI &amp; ML) @ SRMIST ('27)"</tspan><tspan class="punct">,</tspan></text>
+    <text x="18" y="44"><tspan class="key">"focus_areas"</tspan><tspan class="punct">: [</tspan><tspan class="str">"MCP Agents"</tspan><tspan class="punct">, </tspan><tspan class="str">"3D Desktop Apps"</tspan><tspan class="punct">, </tspan><tspan class="str">"Full-Stack"</tspan><tspan class="punct">],</tspan></text>
+    <text x="18" y="66"><tspan class="key">"2026_velocity"</tspan><tspan class="punct">: { </tspan><tspan class="key">"commits"</tspan><tspan class="punct">: </tspan><tspan class="num">177</tspan><tspan class="punct">, </tspan><tspan class="key">"merged_prs"</tspan><tspan class="punct">: </tspan><tspan class="num">43</tspan><tspan class="punct">, </tspan><tspan class="key">"repos"</tspan><tspan class="punct">: </tspan><tspan class="num">22</tspan><tspan class="punct"> },</tspan></text>
+    <text x="18" y="88"><tspan class="key">"open_source"</tspan><tspan class="punct">: </tspan><tspan class="str">"Upstream fix in official MCP Python SDK (#3725)"</tspan><tspan class="punct">,</tspan></text>
+    <text x="18" y="110"><tspan class="key">"flagship_ship"</tspan><tspan class="punct">: </tspan><tspan class="str">"Blendex (6 releases, Win/Linux CI + Setup.exe)"</tspan><tspan class="punct">,</tspan></text>
+    <text x="18" y="132"><tspan class="key">"hackathons"</tspan><tspan class="punct">: [</tspan><tspan class="str">"3rd @ Bug Busters '26"</tspan><tspan class="punct">, </tspan><tspan class="str">"Amazon Alexa+"</tspan><tspan class="punct">, </tspan><tspan class="str">"Motorq"</tspan><tspan class="punct">]</tspan></text>
+    <text x="0" y="154" class="punct">}</text>
+  </g>
+
+  <!-- Right Card: Domain Engineering Allocation -->
+  <rect x="558" y="2" width="440" height="241" rx="14" fill="url(#cardBg)" stroke="url(#cardBorder)" stroke-width="1.2" />
+  <text x="580" y="30" class="font-mono" font-size="12" fill="#8b949e" font-weight="600">⚡ ARCHITECTURE &amp; DOMAIN SPLIT</text>
+  <line x1="558" y1="42" x2="998" y2="42" stroke="#21262d" stroke-width="1" />
+
+  <g transform="translate(580, 68)">
+    <!-- Domain 1 -->
+    <text x="0" y="0" class="font-sans" font-size="12.5" fill="#e6edf3" font-weight="600">AI Agents, MCP Servers &amp; Multimodal CV</text>
+    <text x="395" y="0" class="font-mono" font-size="12" fill="#38bdf8" text-anchor="end">35%</text>
+    <rect x="0" y="8" width="395" height="8" rx="4" fill="#161b22" />
+    <rect x="0" y="8" width="315" height="8" rx="4" fill="url(#barCyan)" />
+
+    <!-- Domain 2 -->
+    <g transform="translate(0, 42)">
+      <text x="0" y="0" class="font-sans" font-size="12.5" fill="#e6edf3" font-weight="600">Desktop Engineering &amp; 3D Pipelines (Electron / PyQt)</text>
+      <text x="395" y="0" class="font-mono" font-size="12" fill="#c084fc" text-anchor="end">30%</text>
+      <rect x="0" y="8" width="395" height="8" rx="4" fill="#161b22" />
+      <rect x="0" y="8" width="275" height="8" rx="4" fill="url(#barPurple)" />
+    </g>
+
+    <!-- Domain 3 -->
+    <g transform="translate(0, 84)">
+      <text x="0" y="0" class="font-sans" font-size="12.5" fill="#e6edf3" font-weight="600">Full-Stack Web &amp; SaaS (Next.js / FastAPI / Go)</text>
+      <text x="395" y="0" class="font-mono" font-size="12" fill="#34d399" text-anchor="end">20%</text>
+      <rect x="0" y="8" width="395" height="8" rx="4" fill="#161b22" />
+      <rect x="0" y="8" width="215" height="8" rx="4" fill="url(#barEmerald)" />
+    </g>
+
+    <!-- Domain 4 -->
+    <g transform="translate(0, 126)">
+      <text x="0" y="0" class="font-sans" font-size="12.5" fill="#e6edf3" font-weight="600">DevOps, CI/CD Release Automation &amp; E2E Testing</text>
+      <text x="395" y="0" class="font-mono" font-size="12" fill="#fbbf24" text-anchor="end">15%</text>
+      <rect x="0" y="8" width="395" height="8" rx="4" fill="#161b22" />
+      <rect x="0" y="8" width="165" height="8" rx="4" fill="url(#barAmber)" />
+    </g>
+  </g>
+</svg>
